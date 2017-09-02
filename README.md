@@ -1,4 +1,4 @@
-Changes in this fork:
+Changes in this fork (published as `@develar/gitbook`):
 
 * no dependency on heavy-weight `npm` and `npmi`. Use `yarn` or `npm` to install required plugins.
 * Execute `lib/cli/build.js` to build book for web. No need to use globally installed `gitbook-cli`. You can simply install this fork as local dependency of your project.
