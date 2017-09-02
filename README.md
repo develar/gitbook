@@ -1,3 +1,18 @@
+Changes in this fork:
+
+* no dependency on heavy-weight `npm` and `npmi`. Use `yarn` or `npm` to install required plugins.
+* Execute `lib/cli/build.js` to build book for web. No need to use globally installed `gitbook-cli`. You can simply install this fork as local dependency of your project.
+* `html` extension for files is not used. [Cleaner URLs: Remove html extension from URLs](https://github.com/GitbookIO/gitbook/issues/1540). 
+
+Removing `html` extension is the main reason why fork is required. Netlify **doesn't** remove `.html` extension from relative links like `../page.html#anchor`.
+So, it leads to numerous issues — duplicated pages in the search index (Google) and so on.
+
+`gitbook serve` is not fixed to such URLs. Because due to number of issues `gitbook serve` is slower than just `gitbook build` and constantly running [http-server](https://yarn.pm/http-server) (hint: use `-c-1` to disable caching). And `http-server` supports URLs without `html`.
+
+Node.js 8 is required to use.
+
+---
+
 GitBook
 =======
 
