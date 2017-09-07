@@ -2,7 +2,8 @@ Changes in this fork (published as `@develar/gitbook`):
 
 * no dependency on heavy-weight `npm` and `npmi`. Use `yarn` or `npm` to install required plugins.
 * Execute `lib/cli/build.js` to build book for web. No need to use globally installed `gitbook-cli`. You can simply install this fork as local dependency of your project.
-* `html` extension for files is not used. [Cleaner URLs: Remove html extension from URLs](https://github.com/GitbookIO/gitbook/issues/1540). 
+* `html` extension for files is not used. [Cleaner URLs: Remove html extension from URLs](https://github.com/GitbookIO/gitbook/issues/1540).
+* heavy-weight dependency `request` is removed. Related functionality is broken, but it is not required for most users.
 
 Removing `html` extension is the main reason why fork is required. Netlify **doesn't** remove `.html` extension from relative links like `../page.html#anchor`.
 So, it leads to numerous issues — duplicated pages in the search index (Google) and so on.

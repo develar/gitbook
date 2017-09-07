@@ -1,6 +1,6 @@
 {
   "name": "@develar/gitbook",
-  "version": "3.2.3",
+  "version": "3.2.6",
   "homepage": "https://www.gitbook.com",
   "description": "Library and cmd utility to generate GitBooks",
   "main": "lib/index.js",
@@ -31,7 +31,7 @@
     "gitbook-plugin-sharing": "1.0.2",
     "gitbook-plugin-theme-default": "1.0.7",
     "github-slugid": "1.0.1",
-    "graceful-fs": "4.1.4",
+    "graceful-fs": "^4.1.11",
     "i18n-t": "1.0.1",
     "ignore": "^3.3.5",
     "immutable": "^3.8.1",
@@ -49,7 +49,6 @@
     "open": "0.0.5",
     "q": "^1.5.0",
     "read-installed": "^4.0.3",
-    "request": "^2.81.0",
     "resolve": "1.1.7",
     "rmdir": "1.2.0",
     "semver": "^5.4.1",
@@ -68,6 +67,9 @@
     "lint": "eslint .",
     "test": "./node_modules/.bin/mocha ./testing/setup.js \"./lib/**/*/__tests__/*.js\" --bail --reporter=list --timeout=10000"
   },
+  "files": [
+    "bin", "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/GitbookIO/gitbook.git"
