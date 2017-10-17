@@ -1,6 +1,6 @@
 {
   "name": "@develar/gitbook",
-  "version": "3.2.6",
+  "version": "3.2.9",
   "homepage": "https://www.gitbook.com",
   "description": "Library and cmd utility to generate GitBooks",
   "main": "lib/index.js",
@@ -21,6 +21,7 @@
     "extend": "^3.0.0",
     "fresh-require": "1.0.3",
     "front-matter": "^2.1.0",
+    "fs-extra-p": "^4.4.4",
     "gitbook-asciidoc": "1.2.2",
     "gitbook-markdown": "1.3.2",
     "gitbook-plugin-fontsettings": "2.0.0",
@@ -68,7 +69,8 @@
     "test": "./node_modules/.bin/mocha ./testing/setup.js \"./lib/**/*/__tests__/*.js\" --bail --reporter=list --timeout=10000"
   },
   "files": [
-    "bin", "lib"
+    "bin",
+    "lib"
   ],
   "repository": {
     "type": "git",
