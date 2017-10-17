@@ -1,6 +1,6 @@
 {
   "name": "@develar/gitbook",
-  "version": "3.2.9",
+  "version": "3.2.10",
   "homepage": "https://www.gitbook.com",
   "description": "Library and cmd utility to generate GitBooks",
   "main": "lib/index.js",
@@ -39,7 +39,6 @@
     "json-schema-defaults": "0.1.1",
     "jsonschema": "1.1.0",
     "juice": "2.0.0",
-    "mkdirp": "0.5.1",
     "moment": "^2.18.1",
     "nunjucks": "^2.5.2",
     "nunjucks-do": "1.0.0",
@@ -57,7 +56,7 @@
     "urijs": "1.18.12"
   },
   "devDependencies": {
-    "eslint": "2.10.2",
+    "eslint": "^4.9.0",
     "expect": "^1.20.1",
     "mocha": "^2.4.5"
   },
