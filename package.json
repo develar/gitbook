@@ -9,8 +9,6 @@
     "bash-color": "0.0.4",
     "cheerio": "^0.22.0",
     "chokidar": "^1.7.0",
-    "cp": "0.2.0",
-    "cpr": "^1.1.2",
     "crc": "^3.4.4",
     "destroy": "1.0.4",
     "direction": "0.1.5",
